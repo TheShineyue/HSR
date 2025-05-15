@@ -1,8 +1,10 @@
-# HSR
+# [ACL 2025] Hierarchical Safety Realignment: Lightweight Restoration of Safety in Pruned Large Vision-Language Models
 
 Because the paper is still under double-blind review and the code needs time to sort out, the code file has not been uploaded for the time being.
 
-## News
+## 🔔 News
+
+- \[2025.05.16\]. Our HSR is accepted by ACL 2025 (Findings)!
 
 ## Environment Preparation
 
