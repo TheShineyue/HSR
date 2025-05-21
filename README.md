@@ -18,7 +18,9 @@ pip install -r requirements.txt
 
 ## Dataset Preparation
 
-We use the [VLGuard](https://huggingface.co/datasets/ys-zong/VLGuard) dataset to complete the identification of safety-critical attention heads and safety-critical neurons, and download the train subset to the "data_process" folder.
+We utilize the [VLGuard](https://huggingface.co/datasets/ys-zong/VLGuard) to identify safety-critical attention heads and neurons. The training subset is downloaded into the "data_process" folder.
+
+Next, we execute the get_data.py script, which generates two files: train_safe_safes.json and train_unsafes.json. These files serve as the utility and safety datasets, respectively.
 
 ## Citation
 If you find our work useful, please consider citing our paper:
