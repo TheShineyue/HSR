@@ -29,11 +29,11 @@ Next, we execute the get_data.py script, which generates two files: train_safe_s
 
 ### HSR
 
-#### Step 1
+#### Step 1: Identifying Safety-Critical Heads
 
 In the SafetyHeadAttribution-hsr folder, modify the model path, data path, and other relevant settings in llava_next_ships_llama.py, then execute the script. By default, the files containing the Ships scores for each head will be saved in the SafetyHeadAttribution-hsr/exp_res/llama3-llava directory (we have included the results from our run).
 
-#### Step 2
+#### Step 2: Identifying Safety-critical Neurons
 
 In the alignment-attribution-hsr folder, modify the llama3_llava.sh script. In addition, you need to modify the settings (e.g., model path) in main.py and lib/data.py.
 
