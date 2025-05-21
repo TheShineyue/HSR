@@ -32,9 +32,76 @@ Next, we execute the get_data.py script, which generates two files: train_safe_s
 
 #### Step 1
 
-In the SafetyHeadAttribution-hsr folder, modify the model path, data path, and other relevant settings in run.py, then execute the script. By default, the files containing the Ships scores for each head will be saved in the SafetyHeadAttribution-hsr/exp_res/llama3-llava directory (we have included the results from our run).
+In the SafetyHeadAttribution-hsr folder, modify the model path, data path, and other relevant settings in llava_next_ships_llama.py, then execute the script. By default, the files containing the Ships scores for each head will be saved in the SafetyHeadAttribution-hsr/exp_res/llama3-llava directory (we have included the results from our run).
 
 ### Step 2
+
+In the alignment-attribution-hsr folder, modify the llama3_llava.sh script. In addition, you need to modify the settings (e.g., model path) in main.py and lib/data.py.
+
+- get pruned model
+```
+model="llama3-llava-next-8b-hf"
+method="lvlm_wanda_hf"
+type="unstructured"
+device="cuda:7"
+suffix="weightonly"
+data_mode="train_safes"
+heads_paths="/home/liyue/psafety/SafetyHeadAttribution-hsr/exp_res/llama3-llava/train_unsafes.json_0.jsonl"
+save_dir="out/$model/$type/${method}_${suffix}/"
+
+python main.py \
+    --model $model \
+    --prune_method $method \
+    --prune_data VLguard\
+    --sparsity_ratio 0.5 \
+    --sparsity_type $type \
+    --save $save_dir \
+    --device $device \
+    --data_mode $data_mode
+```
+- get important score
+```
+# you shold get safety and utility important scores
+model="llama3-llava-next-8b-hf"
+method="lvlm_wanda_hf"
+type="unstructured"
+device="cuda:7"
+suffix="weightonly"
+data_mode="train_safes" # train_unsafes
+heads_paths="/home/liyue/psafety/SafetyHeadAttribution-hsr/exp_res/llama3-llava/train_unsafes.json_0.jsonl"
+save_dir="out/$model/$type/${method}_${suffix}/"
+
+python main.py \
+    --model $model \
+    --prune_method $method \
+    --prune_data VLguard\
+    --sparsity_ratio 0.5 \
+    --sparsity_type $type \
+    --save $save_dir \
+    --device $device \
+    --data_mode $data_mode --dump_wanda_score
+```
+- get realigned model
+```
+model="llama3-llava-next-8b-hf"
+method="lvlm_wanda_recover_heads_gqa"
+type="unstructured"
+device="cuda:7"
+suffix="weightonly"
+data_mode="train_safes"
+heads_paths="/home/liyue/psafety/SafetyHeadAttribution-hsr/exp_res/llama3-llava/train_unsafes.json_0.jsonl"
+save_dir="out/$model/$type/${method}_${suffix}/"
+
+python main.py \
+    --model $model \
+    --prune_method $method \
+    --prune_data VLguard\
+    --sparsity_ratio 0.5 \
+    --sparsity_type $type \
+    --save $save_dir \
+    --device $device \
+    --data_mode $data_mode --p 0.5 --q 0.5 --max_p 0.7 --top_h 4 --heads_paths $heads_paths
+```
 
 ## Citation
 If you find our work useful, please consider citing our paper:
