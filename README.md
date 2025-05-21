@@ -8,6 +8,7 @@ Because the code needs time to sort out, the code file has not been uploaded for
 
 ## 🔔 News
 
+- \[2025.05.16\]. We open sourced the code of our project.
 - \[2025.05.16\]. Our work is accepted by ACL 2025 (Findings)!
 
 ## Quick Start
@@ -34,7 +35,7 @@ Next, we execute the get_data.py script, which generates two files: train_safe_s
 
 In the SafetyHeadAttribution-hsr folder, modify the model path, data path, and other relevant settings in llava_next_ships_llama.py, then execute the script. By default, the files containing the Ships scores for each head will be saved in the SafetyHeadAttribution-hsr/exp_res/llama3-llava directory (we have included the results from our run).
 
-### Step 2
+#### Step 2
 
 In the alignment-attribution-hsr folder, modify the llama3_llava.sh script. In addition, you need to modify the settings (e.g., model path) in main.py and lib/data.py.
 
@@ -103,7 +104,7 @@ python main.py \
     --data_mode $data_mode --p 0.5 --q 0.5 --max_p 0.7 --top_h 4 --heads_paths $heads_paths
 ```
 
-## Citation
+### Citation
 If you find our work useful, please consider citing our paper:
 ```
 
