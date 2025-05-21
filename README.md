@@ -2,7 +2,7 @@
 
 Yue Li*, Xin Yi*, Dongsheng Shi, Gerard de Melo, Xiaoling Wang, Linlin Wang†.
 
-Because the paper is still under double-blind review and the code needs time to sort out, the code file has not been uploaded for the time being.
+Because the code needs time to sort out, the code file has not been uploaded for the time being.
 
 ## 🔔 News
 
