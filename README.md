@@ -1,4 +1,4 @@
-# [ACL 2025] Hierarchical Safety Realignment: Lightweight Restoration of Safety in Pruned Large Vision-Language Models
+# Hierarchical Safety Realignment: Lightweight Restoration of Safety in Pruned Large Vision-Language Models
 
 Yue Li*, Xin Yi*, Dongsheng Shi, Gerard de Melo, Xiaoling Wang, Linlin Wang†.
 
