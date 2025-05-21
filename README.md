@@ -4,8 +4,6 @@ Yue Li*, Xin Yi*, Dongsheng Shi, Gerard de Melo, Xiaoling Wang, Linlin Wang†.
 
 ![hsr.png](resource/hsr.png)
 
-Because the code needs time to sort out, the code file has not been uploaded for the time being.
-
 ## 🔔 News
 
 - \[2025.05.21\]. We open sourced the code of our project.
