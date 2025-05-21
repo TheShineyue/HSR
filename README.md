@@ -16,6 +16,10 @@ conda activate hsr
 pip install -r requirements.txt
 ```
 
+## Dataset Preparation
+
+We use the [VLGuard](https://huggingface.co/datasets/ys-zong/VLGuard) dataset to complete the identification of safety-critical attention heads and safety-critical neurons, and download the train subset to the "data_process" folder.
+
 ## Citation
 If you find our work useful, please consider citing our paper:
 ```
