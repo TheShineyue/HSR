@@ -2,18 +2,23 @@
 
 Yue Li*, Xin Yi*, Dongsheng Shi, Gerard de Melo, Xiaoling Wang, Linlin Wang†.
 
+<p align="center">
+  <a href="https://arxiv.org/abs/"><strong>[📄 Arxiv]</strong></a> •
+<!--   <a href="https://huggingface.co/papers/2502.14744"><strong>[🤗 Hugging Face Daily Paper]</strong></a> -->
+</p>
+
 ![hsr.png](resource/hsr.png)
 
 ## 🔔 News
 
 - \[2025.05.21\]. We open sourced the code of our project.
-- \[2025.05.16\]. Our work is accepted by ACL 2025 (Findings)!
+- \[2025.05.16\]. 🎉 Our work is accepted by **ACL 2025 (Findings)**! 
 
-## Quick Start
+## 🚀 Quick Start
 
 We use [llava-next-llama3-8b-hf](https://modelscope.cn/models/llava-hf/llama3-llava-next-8b-hf) as an example to show the workflow of hsr.
 
-### Environment Preparation
+### ⚙️ Environment Preparation
 
 ```python
 conda create --name hsr python=3.9
@@ -21,13 +26,13 @@ conda activate hsr
 pip install -r requirements.txt
 ```
 
-### Dataset Preparation
+### 📂 Dataset Preparation
 
 We utilize the [VLGuard](https://huggingface.co/datasets/ys-zong/VLGuard) to identify safety-critical attention heads and neurons. The training subset is downloaded into the "data_process" folder.
 
 Next, we execute the get_data.py script, which generates two files: train_safe_safes.json and train_unsafes.json. These files serve as the utility and safety datasets, respectively.
 
-### HSR
+### 🎬 HSR
 
 #### Step 1: Identifying Safety-Critical Heads
 
@@ -102,7 +107,7 @@ python main.py \
     --data_mode $data_mode --p 0.5 --q 0.5 --max_p 0.7 --top_h 4 --heads_paths $heads_paths
 ```
 
-### Citation
+### 📜 Citation
 If you find our work useful, please consider citing our paper:
 ```
 
