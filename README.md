@@ -8,7 +8,7 @@ Because the code needs time to sort out, the code file has not been uploaded for
 
 ## 🔔 News
 
-- \[2025.05.16\]. We open sourced the code of our project.
+- \[2025.05.21\]. We open sourced the code of our project.
 - \[2025.05.16\]. Our work is accepted by ACL 2025 (Findings)!
 
 ## Quick Start
