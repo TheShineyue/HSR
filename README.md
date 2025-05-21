@@ -3,7 +3,7 @@
 Yue Li*, Xin Yi*, Dongsheng Shi, Gerard de Melo, Xiaoling Wang, Linlin Wang†.
 
 <p align="center">
-  <a href="https://arxiv.org/abs/"><strong>[📄 Arxiv]</strong></a> •
+  <a href="https://arxiv.org/abs/"><strong>[📄 Arxiv]</strong></a>
 <!--   <a href="https://huggingface.co/papers/2502.14744"><strong>[🤗 Hugging Face Daily Paper]</strong></a> -->
 </p>
 
