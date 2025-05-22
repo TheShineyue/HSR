@@ -11,7 +11,7 @@ Yue Li*, Xin Yi*, Dongsheng Shi, Gerard de Melo, Xiaoling Wang, Linlin Wang†.
 
 ## 🚀 Quick Start
 
-We use [llava-next-llama3-8b-hf](https://modelscope.cn/models/llava-hf/llama3-llava-next-8b-hf) as an example to show the workflow of hsr.
+We use [llava-next-vicuna-7b-hf](https://modelscope.cn/models/llava-hf/llava-v1.6-vicuna-7b-hf) as an example to show the workflow of hsr.
 
 ### ⚙️ Environment Preparation
 
@@ -31,7 +31,7 @@ Next, we execute the get_data.py script, which generates two files: train_safe_s
 
 #### Step 1: Identifying Safety-Critical Heads
 
-In the SafetyHeadAttribution-hsr folder, modify the model path, data path, and other relevant settings in llava_next_ships_llama.py, then execute the script. By default, the files containing the Ships scores for each head will be saved in the SafetyHeadAttribution-hsr/exp_res/llama3-llava directory (we have included the results from our run).
+In the SafetyHeadAttribution-hsr folder, modify the model path, data path, and other relevant settings in llava_next_ships.py, then execute the script. By default, the files containing the Ships scores for each head will be saved in the SafetyHeadAttribution-hsr/exp_res/llava-next-vicuna directory (we have included the results from our run).
 
 #### Step 2: Identifying Safety-critical Neurons
 
