@@ -39,41 +39,42 @@ In the alignment-attribution-hsr folder, modify the llama3_llava.sh script. In a
 
 - get pruned model
 ```
-model="llama3-llava-next-8b-hf"
+model="llava-next-vicuna-hf-7b"
 method="lvlm_wanda_hf"
 type="unstructured"
 device="cuda:7"
 suffix="weightonly"
 data_mode="train_safes"
-heads_paths="/home/liyue/psafety/SafetyHeadAttribution-hsr/exp_res/llama3-llava/train_unsafes.json_0.jsonl"
+heads_paths="/home/liyue/projects/hsr/psafety/SafetyHeadAttribution-hsr/exp_res/llava-next-vicuna/train_unsafes.json_0.jsonl"
 save_dir="out/$model/$type/${method}_${suffix}/"
 
 python main.py \
     --model $model \
     --prune_method $method \
-    --prune_data VLguard\
+    --prune_data VLguard \
     --sparsity_ratio 0.5 \
     --sparsity_type $type \
     --save $save_dir \
     --device $device \
-    --data_mode $data_mode
+    --data_mode $data_mode 
 ```
+
 - get important score
 ```
 # you shold get safety and utility important scores
-model="llama3-llava-next-8b-hf"
+model="llava-next-vicuna-hf-7b"
 method="lvlm_wanda_hf"
 type="unstructured"
 device="cuda:7"
 suffix="weightonly"
 data_mode="train_safes" # train_unsafes
-heads_paths="/home/liyue/psafety/SafetyHeadAttribution-hsr/exp_res/llama3-llava/train_unsafes.json_0.jsonl"
+heads_paths="/home/liyue/projects/hsr/psafety/SafetyHeadAttribution-hsr/exp_res/llava-next-vicuna/train_unsafes.json_0.jsonl"
 save_dir="out/$model/$type/${method}_${suffix}/"
 
 python main.py \
     --model $model \
     --prune_method $method \
-    --prune_data VLguard\
+    --prune_data VLguard \
     --sparsity_ratio 0.5 \
     --sparsity_type $type \
     --save $save_dir \
@@ -82,24 +83,24 @@ python main.py \
 ```
 - get realigned model
 ```
-model="llama3-llava-next-8b-hf"
-method="lvlm_wanda_recover_heads_gqa"
+model="llava-next-vicuna-hf-7b"
+method="lvlm_wanda_recover_heads"
 type="unstructured"
-device="cuda:7"
+device="cuda:0"
 suffix="weightonly"
 data_mode="train_safes"
-heads_paths="/home/liyue/psafety/SafetyHeadAttribution-hsr/exp_res/llama3-llava/train_unsafes.json_0.jsonl"
+heads_paths="/home/liyue/projects/hsr/psafety/SafetyHeadAttribution-hsr/exp_res/llava-next-vicuna/train_unsafes.json_0.jsonl"
 save_dir="out/$model/$type/${method}_${suffix}/"
 
 python main.py \
     --model $model \
     --prune_method $method \
-    --prune_data VLguard\
+    --prune_data VLguard \
     --sparsity_ratio 0.5 \
     --sparsity_type $type \
     --save $save_dir \
     --device $device \
-    --data_mode $data_mode --p 0.5 --q 0.5 --max_p 0.7 --top_h 4 --heads_paths $heads_paths
+    --data_mode $data_mode --p 0.5 --q 0.5 --max_p 0.7 --top_h 10 --heads_paths $heads_paths
 ```
 
 ### 📜 Citation
