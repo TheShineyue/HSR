@@ -1,0 +1,17 @@
+Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
+Collecting tokenizers
+  Using cached https://pypi.tuna.tsinghua.edu.cn/packages/22/06/69d7ce374747edaf1695a4f61b83570d91cc8bbfc51ccfecf76f56ab4aac/tokenizers-0.21.0-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.0 MB)
+Requirement already satisfied: huggingface-hub<1.0,>=0.16.4 in /home/liyue/.conda/envs/sds/lib/python3.9/site-packages (from tokenizers) (0.26.5)
+Requirement already satisfied: filelock in /home/liyue/.conda/envs/sds/lib/python3.9/site-packages (from huggingface-hub<1.0,>=0.16.4->tokenizers) (3.13.1)
+Requirement already satisfied: fsspec>=2023.5.0 in /home/liyue/.conda/envs/sds/lib/python3.9/site-packages (from huggingface-hub<1.0,>=0.16.4->tokenizers) (2023.10.0)
+Requirement already satisfied: packaging>=20.9 in /home/liyue/.conda/envs/sds/lib/python3.9/site-packages (from huggingface-hub<1.0,>=0.16.4->tokenizers) (23.2)
+Requirement already satisfied: pyyaml>=5.1 in /home/liyue/.conda/envs/sds/lib/python3.9/site-packages (from huggingface-hub<1.0,>=0.16.4->tokenizers) (6.0.1)
+Requirement already satisfied: requests in /home/liyue/.conda/envs/sds/lib/python3.9/site-packages (from huggingface-hub<1.0,>=0.16.4->tokenizers) (2.31.0)
+Requirement already satisfied: tqdm>=4.42.1 in /home/liyue/.conda/envs/sds/lib/python3.9/site-packages (from huggingface-hub<1.0,>=0.16.4->tokenizers) (4.66.1)
+Requirement already satisfied: typing-extensions>=3.7.4.3 in /home/liyue/.conda/envs/sds/lib/python3.9/site-packages (from huggingface-hub<1.0,>=0.16.4->tokenizers) (4.8.0)
+Requirement already satisfied: charset-normalizer<4,>=2 in /home/liyue/.conda/envs/sds/lib/python3.9/site-packages (from requests->huggingface-hub<1.0,>=0.16.4->tokenizers) (3.3.2)
+Requirement already satisfied: idna<4,>=2.5 in /home/liyue/.conda/envs/sds/lib/python3.9/site-packages (from requests->huggingface-hub<1.0,>=0.16.4->tokenizers) (3.4)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /home/liyue/.conda/envs/sds/lib/python3.9/site-packages (from requests->huggingface-hub<1.0,>=0.16.4->tokenizers) (2.1.0)
+Requirement already satisfied: certifi>=2017.4.17 in /home/liyue/.conda/envs/sds/lib/python3.9/site-packages (from requests->huggingface-hub<1.0,>=0.16.4->tokenizers) (2023.11.17)
+Installing collected packages: tokenizers
+Successfully installed tokenizers-0.21.0
