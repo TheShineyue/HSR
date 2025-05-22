@@ -156,7 +156,7 @@ if __name__ == '__main__':
     model_path = "/home/liyue/model/llava-v1.6-vicuna-7b-hf"
     data_path = "/home/liyue/projects/hsr/psafety/dataset/VLguard/train/train_unsafes.json"
     imgs_path = '/home/liyue/projects/hsr/psafety/dataset/VLguard/train'
-    storage_path = "/home/liyue/projects/hsr/psafety/SafetyHeadAttribution-hsr/exp_res/llava_vicuna"
+    storage_path = "/home/liyue/projects/hsr/psafety/SafetyHeadAttribution-hsr/exp_res/llava-next-vicuna"
     if not os.path.exists(storage_path):
         os.makedirs(storage_path)
 
@@ -166,6 +166,5 @@ if __name__ == '__main__':
         imgs_path=imgs_path,
         search_cfg=default_search_cfg,
         storage_path=storage_path,
-        nsamples = 100,
         device=torch.device("cuda:6")
     )
