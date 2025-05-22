@@ -31,7 +31,7 @@ Next, we execute the get_data.py script, which generates two files: train_safe_s
 
 #### Step 1: Identifying Safety-Critical Heads
 
-In the SafetyHeadAttribution-hsr folder, modify the model path, data path, and other relevant settings in llava_next_ships.py, then execute the script. By default, the files containing the Ships scores for each head will be saved in the SafetyHeadAttribution-hsr/exp_res/llava-next-vicuna directory (we have included the results from our run).
+In the SafetyHeadAttribution-hsr folder, modify the model path, data path, and other relevant settings in llava_next_ships.py, then execute the script. By default, the files containing the Ships scores for each head will be saved in the SafetyHeadAttribution-hsr/exp_res/llava-next-vicuna directory.
 
 #### Step 2: Identifying Safety-critical Neurons
 
