@@ -2,6 +2,8 @@
 
 Yue Li*, Xin Yi*, Dongsheng Shi, Gerard de Melo, Xiaoling Wang, Linlin Wang†.
 
+[![arXiv](https://img.shields.io/badge/arXiv-2505.14679-b31b1b.svg?style=plastic)](https://arxiv.org/abs/2505.16104) 
+
 ![hsr.png](resource/hsr.png)
 
 ## 🔔 News
