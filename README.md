@@ -1,4 +1,4 @@
-# Hierarchical Safety Realignment: Lightweight Restoration of Safety in Pruned Large Vision-Language Models
+# [Hierarchical Safety Realignment: Lightweight Restoration of Safety in Pruned Large Vision-Language Models](https://arxiv.org/abs/2505.16104)
 
 Yue Li*, Xin Yi*, Dongsheng Shi, Gerard de Melo, Xiaoling Wang, Linlin Wang†.
 
@@ -106,7 +106,15 @@ python main.py \
 ### 📜 Citation
 If you find our work useful, please consider citing our paper:
 ```
-
+@misc{li2025hierarchicalsafetyrealignmentlightweight,
+      title={Hierarchical Safety Realignment: Lightweight Restoration of Safety in Pruned Large Vision-Language Models}, 
+      author={Yue Li and Xin Yi and Dongsheng Shi and Gerard de Melo and Xiaoling Wang and Linlin Wang},
+      year={2025},
+      eprint={2505.16104},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2505.16104}, 
+}
 ```
 
 Our codebase is built upon on the following works:
