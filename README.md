@@ -6,6 +6,7 @@ Yue Li*, Xin Yi*, Dongsheng Shi, Gerard de Melo, Xiaoling Wang, Linlin Wang†.
 
 ## 🔔 News
 
+- \[2025.05.23\]. We posted the preprint on arxiv. 
 - \[2025.05.21\]. We open sourced the code of our project.
 - \[2025.05.16\]. 🎉 Our work is accepted by **ACL 2025 (Findings)**! 
 
