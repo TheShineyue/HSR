@@ -107,14 +107,11 @@ python main.py \
 ### 📜 Citation
 If you find our work useful, please consider citing our paper:
 ```
-@misc{li2025hierarchicalsafetyrealignmentlightweight,
-      title={Hierarchical Safety Realignment: Lightweight Restoration of Safety in Pruned Large Vision-Language Models}, 
-      author={Yue Li and Xin Yi and Dongsheng Shi and Gerard de Melo and Xiaoling Wang and Linlin Wang},
-      year={2025},
-      eprint={2505.16104},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2505.16104}, 
+@article{li2025hierarchical,
+  title={Hierarchical Safety Realignment: Lightweight Restoration of Safety in Pruned Large Vision-Language Models},
+  author={Li, Yue and Yi, Xin and Shi, Dongsheng and de Melo, Gerard and Wang, Xiaoling and Wang, Linlin},
+  journal={arXiv preprint arXiv:2505.16104},
+  year={2025}
 }
 ```
 
